@@ -1,110 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="/script.js" defer></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Staatliches", cursive;
+    }
+    .w3-row-padding img {
+      margin-bottom: 0px;
+    }
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+      width: 0px;
+      background: #222;
+    }
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+      margin-left: -50px;
+      margin-right: -50px;
+    }
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+      #main {
+        margin-left: 0;
+      }
+    }
+  </style>
+  <body class="w3-content" style="max-width:2500px">
+    <div class="w3-top">
+      <div class="w3-bar w3-black w3-card">
+        <a
+          class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0)"
+          onclick="myFunction()"
+          title="Toggle Navigation Menu"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a href="https://kaylafinalhomepage.glitch.me" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a
+          href="https://calendarpage.glitch.me"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >NEWS</a
+        >
+        <a
+          href="https://newsdirectoreka8u-.glitch.me"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >EVENTS</a
+        >
+        <a
+          href="https://contactpagekayla.glitch.me#contact"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >CONTACT</a
+        >
+        <div class="w3-dropdown-hover w3-hide-small">
+          <button class="w3-padding-large w3-button" title="More">
+            MORE <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="https://88nightmarket.com/" class="w3-bar-item w3-button">Merchandise</a>
+            <a href="https://www.youtube.com/channel/UCZW5lIUz93q_aZIkJPAC0IQ" class="w3-bar-item w3-button">Extras</a>
+            <a href="https://twitter.com/88rising?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="w3-bar-item w3-button">Media</a>
+          </div>
+        </div>
+        <a
+          href="javascript:void(0)"
+          class="w3-padding-large w3-hover-red w3-hide-small w3-right"
+          ><i class="fa fa-search"></i
+        ></a>
+      </div>
+    </div>
 
-    <title>assignment 3 variation-2</title>
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div
+      id="navDemo"
+      class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top"
+      style="margin-top:46px"
+    >
+      <a
+        href="#band"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >BAND</a
+      >
+      <a
+        href="#tour"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >TOUR</a
+      >
+      <a
+        href="#contact"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >CONTACT</a
+      >
+      <a
+        href="https://contactpagekayla.glitch.me#contact"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >MERCH</a
+      >
+    </div>
+    <div class="w3-panel">
+      <i class="w3-xlarge fa fa-bars"></i>
+    </div>
+    <header
+      class="w3-display-container w3-content w3-wide"
+      style="max-width:1500px;"
+      id="home"
+    >
+      <img
+        class="w3-image"
+        id="NIKI"
+        src="https://www.scoutmag.ph/wp-content/uploads/2019/08/88RISING-X-GUESSG-1.jpg"
+        alt="Architecture"
+        width="1500"
+        height="800"
+      />
+     <h3>88</h3><h4>⬆</h4><h5>88</h5><h6>⬆</h6><h7>88</h7><h8>⬆</h8><h9>88</h9>
+    <h10>88</h10>
+    </header>
+    <div class="w3-panel">
+      <i class="w3-xlarge fa fa-bars"></i>
+    <img
+        class="w3-image"
+        id="JOJI"
+        src="https://i.redd.it/7qu3o7o2h7d51.png"
+        alt="Architecture"
+        width="1500"
+        height="800">
     
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-  </head> 
-  <div class="background">
-  <body>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br><br>
-    <br>
-    <br><br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br><br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="title" data-splitting="lines">
-  DO NOT STAND<br/>
-      AT MY GRAVE<br>
-  AND WEEP
-</div>
-
-    <h5 id="author"><br>
-  Mary Elizabeth Frye 
-    </h5>
-    <br>
+    </div>
     
-    <p id="poemone">
-    Do
-      not stand at my grave and weep,
-      <br /><br />
-    I am not there, I do not sleep.
-      <br /><br /><br /><br />
-     <br> <br />I am a thousand winds that blow.
-     <br> <br />I am the diamond glint on snow.
-     <br> <br />I am the sunlight on ripened grain.
-      <br><br />I am the gentle autumn rain.
-      <br><br /><br>
-
-     <br> <br />When you wake in the morning hush,
-     <br> <br />I am the swift, uplifting rush
-      <br><br />Of quiet birds in circling flight.
-      <br><br>I am the soft starlight at night.
-      <br />
-      <br /><br /><br /><br>
-     <br> <br />Do not stand at my grave and weep.
-     <br> <br />I am not there, I do not sleep.
-     <br> <br />
-     <br> <br />Do not stand at my grave and cry.
-    <br>  <br />I am not there, I did not die!
-      </p>
-
-    <br /><br />
-    <br /><br />
-    <br /><br />
-    <br /><br />
-    <br /><br />
     
-
-    
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
+    <!-- First Grid: Logo & About -->
+    <div class="w3-row">
+      <div class="w3-half w3-container">
+        <br /><br /><br /><br /><br /><br />
+        <a href="https://newspagekayla1.glitch.me/"><h1 class="w3-jumbo">#RADIO</h1></a>
+        <br /><br /><br /><br /><br /><br />
+        <a href="https://news2222kayla.glitch.me/"><h1 class="w3-jumbo">#SUPERSOUNDS</h1></a>
+        <br /><br /><br /><br /><br /><br />
+        <a href="https://akylanews3.glitch.me"><h1 class="w3-jumbo">#DOUble happiness</h1></a>
+        <br /><br /><br /><br /><br /><br />
+        <a href="https://kaylalanews4.glitch.me"><h1 class="w3-jumbo">#2k fest</h1></a>
+        <br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br />
+      </div>
+    </div>
   </body>
-  </div>
 </html>
